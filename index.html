@@ -13,14 +13,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
     <!-- Fonts -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <!-- Slicknav -->
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css"> -->
-    <!-- Off Canvas Menu -->
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css"> -->
-    <!-- Color Switcher -->
+    <!-- Slider -->
     <link rel="stylesheet" type="text/css" href="assets/css/vegas.min.css">
-    <!-- Animate -->
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/animate.css"> -->
     <!-- Main Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
@@ -29,7 +23,7 @@
   </head>
   <body>
     <div class="bg-wraper overlay has-vignette">
-      <div id="example" class="slider opacity-50 vegas-container" style="height: 983px;"></div>
+      <div id="main-slider" class="slider opacity-50 vegas-container" style="height: 983px;"></div>
     </div>
 
     <!-- Coundown Section Start -->
@@ -44,29 +38,28 @@
           <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="row time-countdown justify-content-center">
               <h2>- Coming Soon -</h2>
-              <!-- <div id="clock" class="time-count"></div> -->
             </div>
             <br>
             <p>
-              Kami sedang melakukan survei untuk rencana reuni SMA Budi Utomo Angkatan (ANGSLE) 2010.<br>
-              Bantu kami mendata persiapan acara reuni dengan mengisi formulir dibawah ini berikut.
+              Kami sedang melakukan survei untuk persiapan acara reuni SMA Budi Utomo Angkatan 2010.<br>
+              Bantu kami mendata rencana tersebut dengan mengisi survei melalu tombol berikut:
             </p>
             <div class="button-group">
-              <a href="javascript:void()" data-toggle="modal" data-target="#daftar-form" class="btn btn-common">Isi Formulir</a>
+              <a href="javascript:void()" data-toggle="modal" data-target="#daftar-form" class="btn btn-common">Isi Survei</a>
             </div>
             <br>
-            <p>Jangan lupa ajak temanmu untuk ikut mengisi formulir tersebut melalui social media dibawah ini:</p>
+            <p>Jangan lupa ajak temanmu untuk ikut mengisi survei tersebut melalui social media dibawah ini:</p>
             <div class="social mt-4">
               <a class="facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fangsle.id">
                 <i class="fa-brands fa-facebook-square"></i>
               </a>
-              <a class="twitter" target="_blank" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fangsle.id&text=Polling%20acara%20reuni%20Angsle%202010">
+              <a class="twitter" target="_blank" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fangsle.id&text=Survei%20acara%20reuni%20ANGSLE%202010">
                 <i class="fa-brands fa-twitter-square"></i>
               </a>
-              <a class="instagram" target="_blank" href="https://www.instagram.com/?url=https%3A%2F%2Fangsle.id&text=Polling%20acara%20reuni%20Angsle%202010">
+              <a class="instagram" target="_blank" href="https://www.instagram.com/?url=https%3A%2F%2Fangsle.id&text=Survei%20acara%20reuni%20ANGSLE%202010">
                 <i class="fa-brands fa-instagram-square"></i>
               </a>
-              <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?text=Polling%20reuni%20Angsle%202010%20di%20https%3A%2F%2Fangsle.id">
+              <a class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?text=Survei%20reuni%20ANGSLE%202010%20di%20https%3A%2F%2Fangsle.id">
                 <i class="fa-brands fa-whatsapp-square"></i>
               </a>
             </div>
@@ -78,25 +71,16 @@
     </section>
     <!-- Coundown Section End -->
 
-    <!-- Preloader -->
-    <div id="preloader">
-      <div class="loader" id="loader-1"></div>
-    </div>
-    <!-- End Preloader -->
-
     <!-- Daftar -->
     <div class="modal fade" id="daftar-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
               <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='berhasil.html';}"></iframe>
               <form action="https://docs.google.com/forms/d/1ggUkin3m3J6A8hFlFKnN925Q3MGe3iONsU75Z8Af-Nc/formResponse" method="POST"
                     target="hidden_iframe" onsubmit="submitted=true;">
-                  <div class="modal-header">
-                      <h4 class="modal-title">Formulir Survey</h4>
-                      <button type="button" class="close" role="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  </div>
-                  <div class="modal-body">  
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe0MQjBHfNK58A7B3V3yGtpFoIPB9VKx3WXgJBXnZvFVJO8gw/viewform?embedded=true" width="100%" height="954" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                  <div class="modal-body">
+                    <button type="button" class="close mr-4 mt-3" style="cursor: pointer;" role="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <iframe style="margin-top: -30px" src="https://docs.google.com/forms/d/e/1FAIpQLSe0MQjBHfNK58A7B3V3yGtpFoIPB9VKx3WXgJBXnZvFVJO8gw/viewform?embedded=true" width="100%" height="954" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                   </div>
               </form>
           </div>
@@ -107,20 +91,16 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/vegas.min.js"></script>
-    <!-- <script src="assets/js/jquery.countdown.min.js"></script> -->
-    <!-- <script src="assets/js/classie.js"></script> -->
-    <!-- <script src="assets/js/jquery.nav.js"></script> -->
-    <!-- <script src="assets/js/jquery.easing.min.js"></script>  -->
-    <!-- <script src="assets/js/main.js"></script> -->
-
 
     <script type="text/javascript">
-      $('#preloader').fadeOut();
-      $("#example").vegas({
+      $("#main-slider").vegas({
+          preload: true,
+          preloadImage: true,
+          shuffle: true,
+          cover: true,
           timer: false,
-          delay: 15000,
-          transitionDuration: 3000,
-          transition: "blur",
+          delay: 10000,
+          transitionDuration: 1000,
           slides: [
             { src: "assets/img/foto/all-siswa.jpg" },
             { src: "assets/img/foto/gading-memory.jpg" },
